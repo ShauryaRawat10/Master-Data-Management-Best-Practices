@@ -1,0 +1,14 @@
+Matching and Merging of Data from Syndicated Source Systems comes with many Challenges:
+
+1. MultiLingual Data of Same Customer:
+   - Schroeter <=> Schröter
+   - B. Mueller <=> Bodo Müllér
+   
+   Problem Can be solved using Reltio MDM Physical Configuration Settings. 
+   StripDiacritic = True (It will Strip all the diacritic Characters and solve the problem of Exact Matching of Data)
+   
+   
+   
+   
+   
+   - Myra Waters <=> Myra Georg
