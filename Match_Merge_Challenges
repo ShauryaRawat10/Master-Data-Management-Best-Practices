@@ -72,6 +72,11 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
         
         DistinctWordsComparator However, will create huge no of Match Tokens impacting the Performance of the Tenant.
         
+    4. Matching of Full Names with Nick Names/ similar Names
+       
+       First Name   :  Micki  <=>     Michaela 
+       
+       * Reltio MDM Fuzzy Operator can match these Names based on Default Comparator or Soundex Compator.
         
     4. Data Quality Issue
        ADDRESSLINE1 :  PUJOL SURI#ACH MARTI            <=> MARTI PUJOL SURINYACH
@@ -83,8 +88,8 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
          
        * Correcting it in Source System itself or in ETL logic before FullLoad / PartialLoad / PatchLoad
        
-   4. Completely Different Address and Names:
-      Using Identifiers from Trusted sources and Matching based on Identifier (ID Based Rule).
+    5. Completely Different Address and Names:
+       Using Identifiers from Trusted sources and Matching based on Identifier (ID Based Rule).
       
       
       
