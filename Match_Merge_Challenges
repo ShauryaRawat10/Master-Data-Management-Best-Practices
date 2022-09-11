@@ -50,7 +50,7 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
       
       - Myra Waters <=> Myra Georg
 
-   3. Data Quality Issue/ Diffrence in Representation across sources:
+   3. Diffrence in Representation across sources:
       
       ADDRESSLINE1 :  PUJOL SURI#ACH MARTI            <=> MARTI PUJOL SURINYACH
                       PZ DE LAS HERRERIAS, S/N        <=> PLAZA DE LAS HERRERIAS SN
@@ -70,7 +70,19 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
         This comparator will compare Words and Characters based on the Thresholds (Threshold, ThresholdChars)
         If Threshold = 50%, It will try to Match 50% words from Different Soure System.
         
+        DistinctWordsComparator However, will create huge no of Match Tokens impacting the Performance of the Tenant.
         
+        
+    4. Data Quality Issue
+       ADDRESSLINE1 :  PUJOL SURI#ACH MARTI            <=> MARTI PUJOL SURINYACH
+       
+       * Reltio MDM Provides StringFunctionCleanser which works at the Profile Level and correct the Data from Source System.
+         Srub : "!~*.,%()"   (It will Scrub all the unwanted characters)
+         
+         Not Recommended as this Cleanser works at Profile Level and create a New SourceSystem for the corresponsing cleansed data.
+         
+       * Correcting it in Source System itself or in ETL logic before FullLoad / PartialLoad / PatchLoad
+       
    4. Completely Different Address and Names:
       Using Identifiers from Trusted sources and Matching based on Identifier (ID Based Rule).
       
