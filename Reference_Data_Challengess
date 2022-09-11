@@ -1,0 +1,22 @@
+Refrence Data Management is a Challenge as various Source Systems come with their own representation of Data.
+This Data need to be Transcoded or Standardized into Single Trusted Value in the Reltio MDM Central Repository.
+From Users Perspective, it will be ListOfValues which are Standardized and Can be selected from UI.
+
+1. List Of Values Standardization :
+   
+   Gender      :   M <=> Male <=> M. <=> ML
+   Specialty   :   General Practice <=> General Practitoner <=> Practitioner
+   Prefix      :   Mr. <=> Mr <=> M. 
+   State       :   Uttarancal <=> Uttarakhand <=> UK
+   VisitOptOut :   1 <=> True <=> Yes
+   
+   Data Standardization is required in MDM to make a Trusted Golden records having only one representation of reference data which can be used by Downstream 
+   and UpStream.
+   
+   The Source System Must send a "Source_Code" along with "Source_Value" to understand the Code and map it correctly to Canonical Code and Value.
+   
+   SourceSystem |  Attribute  |  Source_Code | Source_Value  | Canonical_Code | Canonical_Value
+   Veeva           Gender        M             Male            GEN.M            Male
+   Onekey          Gender        M.            Male            GEN.M            Male
+   GCP             State         101           Uttarancal      ST.23            Uttarakhand
+   GRV             State         78            Uttarakhand     ST.23            Uttarakhand
