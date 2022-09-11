@@ -78,7 +78,7 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
        
        * Reltio MDM Fuzzy Operator can match these Names based on Default Comparator or Soundex Compator.
         
-    4. Data Quality Issue
+    5. Data Quality Issue
        ADDRESSLINE1 :  PUJOL SURI#ACH MARTI            <=> MARTI PUJOL SURINYACH
        
        * Reltio MDM Provides StringFunctionCleanser which works at the Profile Level and correct the Data from Source System.
@@ -88,7 +88,7 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
          
        * Correcting it in Source System itself or in ETL logic before FullLoad / PartialLoad / PatchLoad
        
-    5. Completely Different Address and Names:
+    6. Completely Different Address and Names:
        Using Identifiers from Trusted sources and Matching based on Identifier (ID Based Rule).
       
       
