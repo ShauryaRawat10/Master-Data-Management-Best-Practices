@@ -30,6 +30,6 @@ From Users Perspective, it will be ListOfValues which are Standardized and Can b
     
     * Dependent Lookups are configured in Reltio L3 Configuration. 
     * Customer has 50-60 LOV attributes to be Standardized including Gender, State, BrickType, BrickValue, IdentifierType, Specialty, COTSpecialty, Disclosure, etc
-      which must all be included under DependentLookups section oif Country in L3 Configuration to segment the data.
+      which must all be included under DependentLookups section oif Country in L3 Configuration to segment the data across countries.
       
       
