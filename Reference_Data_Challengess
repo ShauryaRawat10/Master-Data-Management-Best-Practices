@@ -15,12 +15,13 @@ From Users Perspective, it will be ListOfValues which are Standardized and Can b
    
    The Source System Must send a "Source_Code" along with "Source_Value" to understand the Code and map it correctly to Canonical Code and Value.
    
-   SourceSystem |  Attribute  |  Source_Code | Source_Value  | Canonical_Code | Canonical_Value
-   Veeva           Gender        M             Male            GEN.M            Male
-   Onekey          Gender        M.            Male            GEN.M            Male
-   GCP             State         101           Uttarancal      ST.23            Uttarakhand
-   GRV             State         78            Uttarakhand     ST.23            Uttarakhand
-
+   SourceSystem |  Attribute      |  Source_Code |    Source_Value       | Canonical_Code    |  Canonical_Value
+   Veeva           Gender            M                  Male                    GEN.M            Male
+   Onekey          Gender            M.                 Male                    GEN.M            Male
+   GCP             State             101                Uttarancal              ST.23            Uttarakhand
+   GRV             State             78                 Uttarakhand             ST.23            Uttarakhand
+   PforceRX        HCPSpecialty     General Practice    General Practice        HCPSP.GP         GeneralPractice
+   PforceRX        HCPSpecialty     SP.GPE              General Practioner      HCPSP.GP         GeneralPractice
 
  2. Dependent Lookups :
     
