@@ -4,11 +4,80 @@ Matching and Merging of Data from Syndicated Source Systems comes with many Chal
    - Schroeter <=> Schröter
    - B. Mueller <=> Bodo Müllér
    
-   Problem Can be solved using Reltio MDM Physical Configuration Settings. 
-   StripDiacritic = True (It will Strip all the diacritic Characters and solve the problem of Exact Matching of Data)
+   * Problem Can be solved using Reltio MDM Physical Configuration Settings. 
+     StripDiacritic = True (It will Strip all the diacritic Characters and solve the problem of Exact Matching of Data)
+   
+   * Transliterator Cleanser 
+     Reltio Provides Transliterator Cleanser which will match latin and non-latin data. The Cleanser is Match Rule Level Cleanser.
+             {
+                    "uri": "configuration/entityTypes/HCO/matchGroups/ExactNameZipCntryCity_NtDept_Test",
+                    "label": "(x) Suspect on Exact (Name,Zip5, Country, City) and SubType NotEquals (Department)",
+                    "type": "suspect",
+                    "useOvOnly": "true",
+                    "rule": {
+                        "matchTokenClass": "com.reltio.match.token.ExactMatchToken",
+                        "and": {
+                            "exact": [
+                                "configuration/entityTypes/HCO/attributes/Country",
+                                "configuration/entityTypes/HCO/attributes/Name",
+                                "configuration/entityTypes/HCO/attributes/Addresses/attributes/City"
+                            ],
+                            "cleanse": [
+                                {
+                                    "cleanseAdapter": "com.reltio.cleanse.impl.TransliterateCleanser",
+                                    "cleanseAdapterParams": {
+                                        "transliteratorCommand": "Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC"
+                                    },
+                                    "mappings": [
+                                        {
+                                            "attribute": "configuration/entityTypes/HCO/attributes/Addresses/attributes/City",
+                                            "mandatory": false,
+                                            "allValues": false,
+                                            "cleanseAttribute": "configuration/entityTypes/HCO/attributes/Addresses/attributes/City"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "matchServiceClass": "com.reltio.businesslogic.match.providers.internal.InternalMatchService",
+                    "scoreStandalone": 0,
+                    "scoreIncremental": 0
+                }
    
    
-   
-   
-   
-   - Myra Waters <=> Myra Georg
+   2. Change in Surname (After Marriage or Legally Changing Name)
+      
+      - Myra Waters <=> Myra Georg
+
+   3. Data Quality Issue/ Diffrence in Representation across sources:
+      
+      ADDRESSLINE1 :  PUJOL SURI#ACH MARTI            <=> MARTI PUJOL SURINYACH
+                      PZ DE LAS HERRERIAS, S/N        <=> PLAZA DE LAS HERRERIAS SN
+                      AVDA MOSSEN PONS I RABADAM SN   <=> AV.MOSSEN PONS I RABADAM S/N
+                      AV SIERRA DE ATAPUERCA 4        <=> Pº SIERRA DE ATAPUERCA, 4
+      HospitalsName : B-CENTRO COOP.FTCO.TALAVERANO   <=> CENTRO COOP FCO TALAVERANO SC
+                      CTRO SALUD PUBLICA DE DENIA     <=> CENTRO DE SALUD PUBLICA DENIA
+                      SAVALL PEREZ, M.JESUS           <=> SAVALL PEREZ MARIA JESUS
+                      DE MARIANO CB                   <=> FARMACIA DE MARIANO
+                      
+      * To Some extend the problem can be solved using NoiseDictionary which will eliminate the Noise words while matching.
+        For eg : NoiseDictionary having words like "Farmacia", "Plaza", "S/N", "SN"
+        Noise Dictionary has to be separate for Addresses and Names.
+        
+      * Reltio MDM Match Rules Comparator and Token Classes 
+        Using Fuzzy Clause and adding the DistinctWordsComparator and DistinctWordsMatchToken 
+        This comparator will compare Words and Characters based on the Thresholds (Threshold, ThresholdChars)
+        If Threshold = 50%, It will try to Match 50% words from Different Soure System.
+        
+        
+   4. Completely Different Address and Names:
+      Using Identifiers from Trusted sources and Matching based on Identifier (ID Based Rule).
+      
+      
+      
+      
+                      
+                      
+                      
+
