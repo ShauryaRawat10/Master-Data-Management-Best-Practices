@@ -46,6 +46,37 @@ Connected Customer Data is heart of Customer Experience :
  6. REST : Simplified Integration via rich REST API and JSON
  
  
+Impact of Scattered Data structures on Customers and Organizations:
+1. Customer Impact:
+    > Inconsistent experience across website, mobile app, call center and in-store
+    > Providing the same data repeatedly
+    > Answering the same questions repeatedly
+    > Changing data in one place but it is not updated elsewhere
+    > Opting out repeatedly (Email Opt-Out)
+    
+2. Organizational Impact:
+   > Simple Organization questions are difficult to answer
+     1. How much business we do with company X?
+     2. Who are our top 20 customers
+     3. How many customers do we have in X industry?
+     4. How many service tickets are open for company X right now?
+     5. What product, services and contracts does company X own or use right now?
+     
+MDM and Data Collection Classification:
+ Applications ->                                               
+                 Entities  ->                                                                                                    //
+                              Parties                          // Master Data                                                    //
+                                      -> People                // Descriptive information about parties, places and thing        // Structured data
+                                      -> Organizations         //                                                                // Fits neatly in fields or columns
+                              Places                           // Reference Data                                                 // eg: Names, Addresses, Phone Numbers, Email Addresses, DOB
+                              Things                           // A subset of master data. Any data in drop down lists           //
+                 Relationships                                                                                                   //
+                 Interactions / Transactions                                                                                     //
+                 
+                 Text/ Images / Audio / Video Logs             // No predefined data model. Difficult to work with               // Unsturctured data - Reltio does not support
+                 
+ 
+ 
  
  
  
