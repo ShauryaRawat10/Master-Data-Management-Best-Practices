@@ -76,7 +76,68 @@ MDM and Data Collection Classification:
                  Text/ Images / Audio / Video Logs             // No predefined data model. Difficult to work with               // Unsturctured data - Reltio does not support
                  
  
- 
+ Data Quality Challenges:
+1. Poor Data Quality Sources:
+   > Incorrect information entered in apps
+   > Overloaded attributes
+   > Forcing required information to be entered
+   > Default values in apps
+   > System limitation such as character limit
+   > Integration processes manipulating data to fit into the target system
+   > Lack of visibility in app about data that exists elewhere in the organization
+   
+2. Data Duplication:
+   > Each app is its own data silo
+   > Only care about its own information and executing business processes 
+   > Same customer may appear multiple times
+   > The application may not identify multiple records
+   > Companies do not know - Who someone is, All their relationship and how they are interacting or transacting
+   
+3. Data Inconsistency
+   > Inconsistent reference data appears in the drop down list. Refernce data is application specific.
+   > Hidden code values are key in the database. eg US, USA, 100, 01, United States could mean same country in each database
+   > Difficult to pull data from all system with different code and combine them
+   
+4. Poor Data Quality Impacts
+   > Gartner reports poor data quality costs businesses an average of $13.1 million each year
+   > IBM estimates $3 trillion costs on aggregate in US alone
+   > 94% of organizations suspect that their customer and prospect data may be inaccurate
+   > Duplication rates between 10-30% are not uncomman
+   
+   
+RELTIO'S MISSION
+We help businesses accelerate value of data, so they can maximize impact every day.
+
+Reltio Unifies complex data:
+1. Unifies data across silos within an enterprise
+2. Cleanse, de-duplicates, and enriches data
+3. Manages quality issues by removing duplicates, inconsistencies and mismatches reference data values
+4. Creates a single version of truth usinf machine learning and rule-based-approaches
+5. Creates a purpose built abstration layer separate from siloed applications
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+
+
+
+
+
+
+
+
  
  
  
