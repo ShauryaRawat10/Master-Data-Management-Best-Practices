@@ -115,36 +115,38 @@ Reltio Unifies complex data:
 4. Creates a single version of truth usinf machine learning and rule-based-approaches
 5. Creates a purpose built abstration layer separate from siloed applications
 
+Trusted Data Priority:
+1. Companies Care about
+   > Increasing revenue or growth
+   > Reducing costs
+   > Minimizing risks
+2. Successful initiatives start with trusted data
+3. Bad data in equals bad data out. Garbage in garbage out
+4. Purpose-built Master data Management solutions creates a trusted data foundation
 
 
-
-
-
-
-
-
-
+Business Initiatives
+1. It starts with Internal data. Internal data exists in hundreds of apps to store structured and unstructured data.
+   eg: CRM, ERP, Marketing and Data Lake
+2. Third-Party Data
+   Third party data companies scrape, curate and sell data with more descriptive attributes to companies
+   eg: D&B, TransUnion, BvD, Data Axle
    
    
-   
-   
-   
-   
+Successs Story:
+Business Challenge: 
+1. On-Premise Legacy MDM with high infrastructure cost
+2. Need for improved customer Experience
+3. Agility and regular product updates without disruptions
+
+Solution:
+1. Replace Legacy MDM with Reltio's Saas MDM
+2. Connect 8 back office Systems
+3. Fuel 15 downstream applications with trusted data
+
+Outcomes:
+1. 60% increase in first call resolution. No longer had to bounce call around in call-center.
+2. Improved Customer Experience and Customer Service Productivity
+3. Improved data quality pipeline, reducing IT workload
 
 
-
-
-
-
-
-
- 
- 
- 
-                         
-                         
-                         
-
-
-
-     
