@@ -1,0 +1,11 @@
+API : 
+{{urlAuth}}/token?username={{login}}&password={{password}}&grant_type=password
+
+Headers: 
+Authorization : Basic {{ClientID}}
+
+
+
+******************************************************************************
+urlAuth : https://auth.reltio.com/oauth
+ClientID : cmVsdGlvX3VpOm1ha2l0YQ==
