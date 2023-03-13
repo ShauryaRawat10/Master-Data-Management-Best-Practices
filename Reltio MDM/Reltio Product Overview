@@ -77,6 +77,56 @@ Reltio Connected platform solution packs provide customers with resources to red
               Connectors and Integration Recipes
 
 
+Entity Resolution:
+> Reltio creates a single source of truth with one unique ID for every profile
+> Reltio matches at the scale and speed of business while ensuring a data quality foundation
+
+1. Matching
+   > There are several different customer touch points with partial data
+   > Matching identifies same or related records
+   > The process includes deduplication and merging records
+   
+   Rule-Based Matching
+   > Rule Identifies matches, merge automatically or present to data stewards for resolution
+   > Users review the results of matching
+   > Modify match rules to correct matching errors
+   
+   Reltio Match IQ
+   > Reltio Match IQ allows users to train Machine Learning models (ML) to suggest matches
+   > These ML algorithms either merge records automatically or present them as Potential Matches
+   > Match IQ offering is a part of base package
+   > Machine Leaning-based matching is quicker and constantly improves on itself
+   > Companies can view duplicates without even loading data into Reltio
+   
+2. Survivorship
+   > Attribute Based survivorship startegy which is dynamic and does on-the-fly operational Value (OV) Calculation
+   
+3. Reltio ID
+   > Reltio ID uniquely identifies a profile inside of Reltio across the entire platform
+   > Same Identifier allows for a better customer experience
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 
 
 
