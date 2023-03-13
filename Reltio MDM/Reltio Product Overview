@@ -65,6 +65,16 @@ Third Party Data                                                                
 
 
 
+Solution and resources:
+Reltio Connected platform solution packs provide customers with resources to reduce data modeling efforts, configuration efforts and implementation time
+
+1. Core : Data Model and Configurations (including MatchRules, Survivorship Strategy amd Cleanse Configurations)
+          Use Interface
+          Data Validation, Data Quality Dashboards, Workflow
+          Reference Data (Lookup Values, RDM Configurations)
+2. Advanced : Data Tenants
+              Data Cleansing and Enrichment
+              Connectors and Integration Recipes
 
 
 
