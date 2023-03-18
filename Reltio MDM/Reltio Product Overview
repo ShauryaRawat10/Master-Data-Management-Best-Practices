@@ -110,8 +110,76 @@ Data Quality:
 Without high quality data, companies business decisions are impacted by lost revenue and poor customer experience.
 Reltio solves this issue with continuos data monitoring and data quality dashboards.
 
-1. Continuous Automated Data Quality Management:
+  1. Continuous Automated Data Quality Management:
+     > Automatically and continuously measures and inspects quality of data with data validation
+     > Real time visibility and eliminating complex ity with interactive dashboard
+     > High quality contact data with ongoing cleansing, correction and standardization
+     > Improved Data Governance with RDM
+     > Historical Snapshots, Market Segment benchmarks, and intelligent recommendation with ML capabilities
+
+  2. Real Time visibility:
+     > Quickly find and fix data quality issues
+     > provides comprehensive metrics for entities and their attributes
+
+  3. High Quality Contact Data:
+     > Cleansing, matching, verification and Standardization enriches the quality of data
+     > Integrations with multiple service providers to fill in missing data and standardize formats:
+       Address Verification, Phone and Email Cleansers, Date Standardization, String function cleansers, ML-based and user defined matching
+
+  4. RDM
    
+Integrating and Analyzing Data:
+  Inbound:
+  1. Reltio REST API
+  2. Reltio Data LOader and External Match
+  3. Reltio Pre-Configured Connectors (Salesforce Connector, D&B, BvD)
+  4. Reltio Integration HUB
+
+  Outbound:
+  1. Reltio REST API
+  2. Reltio Export
+  3. Event Streaming
+  3. Reltio Connectors
+  4. Reltio Integration HUB
+
+
+Workflow Data Governance:
+  Workflow are the main features Reltio has to drive Data Governance efforts
+  Are the sequence of tasks or steps with condition that achieve a specific business goal
+  Tracks changes in Real-time so Data Stewards can review and approve changes
+  
+  Reltio provide 3 fully configured workflow:
+  1. Potential Match review
+  2. Recommend Delete
+  3. Data Change Request (DCR)  : User submits a DCR and workflow triggers sending an assigned individual a task to approve/reject the change
+  
+  Customers can also create their own workflow
+  
+Securing and Protecting Data:
+  High Security Standards:
+  1. Running periodic penetration tests
+  2. Maintaining approved security policies and procedures aligned to a HITRUST CSF Standard
+  3. Obtaining SOC 1 type II and SOC 2 Type II complaince certifications for Reltio cloud platform
+  4. Obtaining 3rd party certifications for Europian union (EU), Swiss privacy shield, and Asian Pacific (APEC)
+  5. Developing code to the OWASP (Open web application security project) top ten standards
+  6. Maintaining an environment on the platform configured to meet Health Insurance Portability Act (HIPAA) requirements
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
 
 
 
