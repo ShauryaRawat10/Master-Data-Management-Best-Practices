@@ -164,9 +164,62 @@ Securing and Protecting Data:
   5. Developing code to the OWASP (Open web application security project) top ten standards
   6. Maintaining an environment on the platform configured to meet Health Insurance Portability Act (HIPAA) requirements
 
-
-
+  Reltio Platform Security:
+  1. Customer Data is encrypted with Customer Specific Keys
+  2. Reltio ensures the OS, DB and network are secured at highest standards and best practices
   
+  User Authentication and Role based access model:
+  1. User-facing security features built in the platform
+  2. User can select diferent types of Authentication
+  3. Companies can manage user groups, restrictions and determine who can load, export and change data permissions
+  
+  
+Platform Performance:
+  1. Reltio need to be Stable, real time fast and always on
+  2. Vision: World's real time Operational System for data
+     Mission: Help businesses accelerate the value of data, to maximize impact everyday
+  3. Reltio accelerated value of data by creating a single dource of truth in real time, at scale
+  4. All operations, data In, data out, and client interactions are available via API
+  5. Real time API allows time-to-action
+  6. API allows real-time operating at scale, improves user experience, provides flexibility and drives innovation
+
+
+Business Continuity:
+Business Continuity is the ability to continue core functions and operations during an unplanned incident or natural disaster
+Business Continuity demands the platform be stable, reliable and always available
+1. High Availability:
+   > It minimizes system-wide failure by building redundancy and fault tolerance
+   > Reltio has multiple availability zones with services in regions
+   > If availability zones are down, Reltio automatically switches to another zone
+2. Disaster recovery:
+   > Process of getting system back to its operational state
+   > Recovery Time Objective (RTO): Maximum amount of time a system can be down, Reltio's RTO is less than 24 hours
+   > Recovery Point Objective (RPO): Maximum acceptable time since the last recovery point. Reltio RPO's is less than 24 hours 
+3. Resiliency:
+   System's ability to bounce back to acceptable operational state after a failure
+   Reltio has network operations center that constantly monitors status of the platform with health checks
+   Backups are completed every 24 hours
+   
+   
+   
+   
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
