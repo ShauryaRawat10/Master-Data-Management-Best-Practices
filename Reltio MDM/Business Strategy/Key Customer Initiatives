@@ -46,13 +46,19 @@ Accelerate Growth Initiative:
    
 7. Privacy and Consent Management:
    A system or process for allowing customers to determine what personal data they are willing to share with business
-
+   > Collect and share consent and preferences data across all systems in real time
+   > Protect customer data with enterprise-class security
+   
 8. Fraud Detection:
    A set of activities undertaken to prevent money or property from being obtained through false pretenses
-
+   > Integrate real-time trusted data to fraud management systems from legacy and other systems
+   > Enrich customer data with 3rd party data sources to have visibility to their credit history, etc
+   
 9. Auditing and Complaince Reporting:
    A comprehansive review of an organization's adherence to regulatory guidelines
-   
+   > Centralize and share consent and preferences data across all systems
+   > Easily search data changes, deletions via a simple UI
+   > Continuously monitor data quality metrics via interactive dashboards
    
    
    
