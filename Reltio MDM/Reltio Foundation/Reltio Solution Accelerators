@@ -1,0 +1,12 @@
+1. Account: 
+   > Manage B2B( Business to Business) and B2C (Business to consumer) data and relationship
+   > Includes Organization, Contact and Address entity type
+   > Includes support for D&B and Salesforce connector
+   > Includes affiliations, D&B hierarchy, customer organization hierarchy relationship type
+
+2. Consumer 360: 
+   > Manage data about consumers and their associated relationships
+
+3. Life Sciences Customer 360: Manage data about HCP/HCO and their affiliation
+
+4. Life Sciences Product 360: Manage Data about product and substances in LS industry
