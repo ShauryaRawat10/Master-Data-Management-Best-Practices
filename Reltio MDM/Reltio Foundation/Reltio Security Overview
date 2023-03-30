@@ -80,8 +80,37 @@ The Reltio Platform allows you to authorize users by assigning roles and permiss
       5. Deletion
 
 
+Roles:
+1. System Roles: These are the default roles provided by Reltio to enable your access to the Reltio Platform. 
+                 You cannot edit these predefined roles as the permissions for these roles are managed in the Reltio Platform. 
+                 Each system role can either provide access to a single module/service, or to a combination of several modules/services. 
+2. Custom Roles: Reltio allows customers to create their own custom roles to provide access to users based on their business requirements. 
+                 The permissions for these roles are owned and managed by the respective customers. 
+                 
+Once you define a Role, you can assign it to a User or a Group. A Group is made up of numerous Users with the same access, defined by a Group name. 
+When you're assigning a Role to a User or a Group, you also need to associate Reltio tenants for which the User or Group is going to have that role. 
+By associating roles with tenants, you can grant or restrict user access to your data.
 
+Each Role has an associated Permissions Matrix that provides information about the Services, Resources/Sub-resources, and Privileges for each system role. 
+Reviewing the Permission Matrix for a System Role helps you assign appropriate roles to your users based on your business requirements and the level of access they 
+need to perform their job.
 
+   > ROLE_API
+    - All users who need to access the Reltio API must be granted the ROLE_API system role. 
+      This role enables users and administrators to access various Reltio services and resources/sub-resources that they have access to using the Reltio API.
+
+   > ROLE_ADMIN_CUSTOMER
+    - This system role must be assigned to administrators who need to manage all tenant data and user access rights of all the tenants in the scope of a customer.
+
+   > ROLE_ADMIN_TENANT
+    - This system role must be assigned to administrators who need to manage tenant data for specified tenants of a customer, but do not need access 
+      to user account management.
+
+   > ROLE_ADMIN_USER
+    - This system role must be assigned to administrators who only need to manage user accounts of a customer. 
+
+****User accounts can be managed Internal to Reltio or External to Reltio, through an Identity Provider (IdP) such as Okta, Ping, Auth0, 
+****Google Apps, GitHub, and Active Directory Federation Services.
 
 
 
