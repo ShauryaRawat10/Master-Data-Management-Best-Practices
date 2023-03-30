@@ -1,0 +1,43 @@
+Reltio Platform Security Model:
+
+  The Reltio Cloud Platform is cloud native and leverages security regimes from world leading public cloud providers 
+  (i.e. Amazon Web Services, Google Cloud Platform, and Microsoft Azure), as well as Reltio’s own internal data security practices, to deliver Reltio services 
+  to our customers.
+
+1. Access
+  The Reltio platform's security model provides granular access across all services to users based on the least-privileged access principle. 
+  This means, users can only access those resources and data that they need to perform their job roles based on specific business requirements. 
+  The idea is to ensure the right people have access to the right resources. 
+  
+2. Role-Based Access Controls
+  Customers are responsible for defining and managing users, roles, and groups, within the customer’s deployment based on their business requirement . 
+  Customers can administer role-based access control (RBAC) using the Reltio Console or Reltio APIs.  
+  Authorization is denied by default, and only users who have explicit access permissions to a Reltio resource may perform functions in the Reltio Cloud Platform.  
+
+3. Metadata security 
+   It helps you bridge this gap. Metadata security allows you to restrict user access to specific types of metadata at the entity, relationship, 
+   or attribute-level based on their role. By implementing Metadata security, you will have better granular control over your user access. 
+
+4. Single Sign-On
+  The platform supports Single Sign-On (SSO) access for customers with both SAML and OIDC protocols, and also provides role-based access 
+  controls for customers to maintain access rights to its tenants.  
+  
+5. Administrative Access
+  Reltio support and administrative access to customer production systems is restricted.  
+  Customers can request administrative access for their staff based on a valid business need such as a bugfix by submitting a Support ticket. 
+  
+
+Reltio Platform Security Benefits
+
+The Reltio Platform Security Model enables you to manage all of your users and their privileges based on business requirements. 
+This establishes better data security and governance to meet your business, statutory, and compliance requirements.
+
+- Safeguards all your data by limiting role-based access to data and resources.
+- Establishes data governance by providing privilege-based access to resources.
+- Provides out-of-the-box System roles that you can assign to users to get started quickly.
+- Allows you to define your own custom roles and provide appropriate privileges based on your business requirements.
+- Enables you to assign or revoke the roles to users at the tenant level.
+- Provides the ability to group users and makes role assignment much easier.
+- Reduces the dependency on the Administrator role.
+
+
