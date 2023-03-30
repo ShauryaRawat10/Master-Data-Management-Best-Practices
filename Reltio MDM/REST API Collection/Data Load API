@@ -1,0 +1,6 @@
+Batch Oriented Strategy Planning:
+ 
+ Real Time API:
+ > Post JSON Object (30 to 50 per collection)
+ > Spawn multiple threads (10 to 15 thread)
+
