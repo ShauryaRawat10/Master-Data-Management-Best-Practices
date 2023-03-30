@@ -41,3 +41,48 @@ This establishes better data security and governance to meet your business, stat
 - Reduces the dependency on the Administrator role.
 
 
+Identity and Access Management:
+When a user accesses the Reltio platform, the first thing to check is the user’s identity (Authentication).
+Once the user confirms their identity, the next step is to determine what resources the user can access (Authorization). 
+The same principle applies to system processes/API requests triggered by applications in the organization that try to access data in the Reltio platform.
+
+What is Authentication?
+  Authentication is the process of verifying the identity of a user or system. It is the act of validating whether users are who they claim to be.  
+  For example: authentication can be as simple as using an username and password to log into an app.
+
+  Reltio provides two options to authenticate access depending on the tenant configuration:
+  > Single Sign-On (SSO) using a corporate Identity Provider (IdP).
+  > Non-SSO using the Reltio Authentication Service.
+
+  Reltio supports the following protocols to configure SSO:
+  > OAuth2/OpenID Connect (OIDC)
+  > Security Assertion Markup Language (SAML)
+
+What is Authorization?
+Authorization is the act of giving a user permission to access a specific resource. 
+For example: Only employees from the Human Resources department can access employee records.
+The Reltio Platform allows you to authorize users by assigning roles and permissions that are defined based on specific business requirements.
+
+  Reltio's Security model uses permissions to grant access to user accounts. Permissions are a combination of services, resources/sub-resources, and privileges. 
+  These permissions are allocated to roles, which later can be assigned to users (directly or via groups) making sure you have total control over the access 
+  level users have to features and functionality in the Reltio platform.
+
+  A Quick Example
+  To enable a user, Karen, to monitor the health of a LCA (Life Cycle Actions) service, you would need to assign Karen the role that has privilege 
+  for Monitoring resources in the LCA Service. Without this role permission, Karen, would not be able to access the LCA service.
+
+  Authorization: Privileges
+    The Reltio Platform supports role-based security for metadata, data, and even specific REST API endpoints. You can define privilege for each role. 
+      1. Create
+      2. Read
+      3. Update
+      4. Execute : Execute a specific action
+      5. Deletion
+
+
+
+
+
+
+
+
