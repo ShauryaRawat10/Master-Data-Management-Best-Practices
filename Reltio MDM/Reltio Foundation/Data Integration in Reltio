@@ -26,7 +26,7 @@
     - Limits CSV (33 GB max remote, 50 MB max local), Excel (100,000 rows, 50 MB max local), JSON (50 MB max, 30-50 records at a time)
     - Best for Bulk loads, historical data loads, batched updates, loading one type at a time, easy mapping
 
-   - Synchronous LOad API
+  - Synchronous LOad API
      Most flexible way to load data into Reltio. Best way to load data for continuous system integrations.
      - This API is typically how the pre-built Reltio Connectors and Integration HUB (RIH) load data.
      - It triggers immediate processing
@@ -57,24 +57,34 @@
      - Get data using crossswalk id, entity id, relationship id, relationship start and end entity id
      - Supported File Type - JSON, LIMIT per files is 30-50 records
 
- > Events API/ Streaming API
-   To stream data from Reltio, use the events API. The Reltio events API publishes messages to cloud message queues that your applications then consume
-   Reltio Message service queue creates a message for any CRUD or Merge event in tenant.
-   - Reltio Snowflake and GBQ Connectors use similar set of API to sync data in real real time.
-   - Streaming API is only available for export, importing via cloud message service requires custom integration or RIH.
-   - Using events API you can stream event data about Reltio types including when Entities/ Relationships are created, updated, deleted, Matched/Merged, Unmerged,
-     or the associated workflow status changed
-   - Messages do not count towards API Hit limit. This is howvever not FIFO
-   - Supported cloud message queue: AWS SQS, AWS SNS, GCP PubSub, Azure Service Bus
-   - Messages can be sent to multiple message queues and filtered based on data type(Entity, relationship, integraction), Event Type (CRUS, Merge/Unmerge), value of attribute
-   ** By default only data about the event and if the OV changed are sent in the message.
-   ** You can send payload that contains all populated attributes for affected records. This is not recommended as it creates very large messages that slow down message queue
+   - Events API/ Streaming API
+     To stream data from Reltio, use the events API. The Reltio events API publishes messages to cloud message queues that your applications then consume
+     Reltio Message service queue creates a message for any CRUD or Merge event in tenant.
+     - Reltio Snowflake and GBQ Connectors use similar set of API to sync data in real real time.
+     - Streaming API is only available for export, importing via cloud message service requires custom integration or RIH.
+     - Using events API you can stream event data about Reltio types including when Entities/ Relationships are created, updated, deleted, Matched/Merged, Unmerged,
+       or the associated workflow status changed
+     - Messages do not count towards API Hit limit. This is howvever not FIFO
+     - Supported cloud message queue: AWS SQS, AWS SNS, GCP PubSub, Azure Service Bus
+     - Messages can be sent to multiple message queues and filtered based on data type(Entity, relationship, integraction), Event Type (CRUS, Merge/Unmerge), value of attribute
+     ** By default only data about the event and if the OV changed are sent in the message.
+     ** You can send payload that contains all populated attributes for affected records. This is not recommended as it creates very large messages that slow down message queue
    
-   - Supported File Types: JSON (Recommended), JSON Zipped by GZIp and converted into base64 
-   - Limit: depends on message queue settings
-   - Best for Custom Integrations using cloud message queue, keeping all db/ downstream in sync with Reltio
+     - Supported File Types: JSON (Recommended), JSON Zipped by GZIp and converted into base64 
+     - Limit: depends on message queue settings
+     - Best for Custom Integrations using cloud message queue, keeping all db/ downstream in sync with Reltio
 
 
+
+> Pre-built Connectors:
+  Easiest way to integrate data into Reltio by using pre-configured connectors
+  1. Salesforce 2 way Integration:
+     - Share account and contact data between Reltio and Salesforce in both direction
+     - Use Search before Create (SBC) feature to check for existing records in Reltio before creating new ones in Salesforce
+     - Connector has intuitive step-by-step interface to map objects and fields between Salesforce and Reltio
+     - Use REST API to monitor and troubleshoot data exchange between two systems. 
+
+  
 
 
 
