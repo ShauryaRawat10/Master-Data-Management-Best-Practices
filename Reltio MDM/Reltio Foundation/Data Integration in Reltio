@@ -38,10 +38,41 @@
      - Can post entities and relationships at the same time
      - Best for Single record uploads, Small batch of updates, loading interactions, transformed data, continuous integration
 
+> Exporting data from Reltio 
+  - Asynchronous Export API
+    Most efficient way to export data. The best way to bulk export the data.
+    - Reltio Console Export Application uses same set of APIs in a low code interface for entities and relationships
+    - UI and API (Entities, Relationships), API Only (Activity logs, Merge logs)
+    - File location you can export to: S3, Google Cloud Storage, Azure Blob Storage
+    - By default data is exported to cloud storage location inside your Reltio tenant. This location depends on virtual private cloud your tenant is set up in.
+      For eg: If your tenant is hosted on AWS, then data exported will be AWS S3 bucket.
+    - You can configure Aysnchoronous Export API to export to a specified location by providing credentials
+    - Only one type (Entity , Relationship) can be exported in each file
+    - For Bulk downloads, periodic batched updates
 
+   - Synchronous Export API
+     Most flexible way to get data out of Reltio. Best way to fetch data for real time continous system integration
+     - These API are typically how the prebuilt connectors and Reltio Integration HUB (RIH) export data.
+     - Can fetch data from many types - Entities, Relationship, Integration, Merges, Activity Log, and more.
+     - Get data using crossswalk id, entity id, relationship id, relationship start and end entity id
+     - Supported File Type - JSON, LIMIT per files is 30-50 records
 
-
-
+ > Events API/ Streaming API
+   To stream data from Reltio, use the events API. The Reltio events API publishes messages to cloud message queues that your applications then consume
+   Reltio Message service queue creates a message for any CRUD or Merge event in tenant.
+   - Reltio Snowflake and GBQ Connectors use similar set of API to sync data in real real time.
+   - Streaming API is only available for export, importing via cloud message service requires custom integration or RIH.
+   - Using events API you can stream event data about Reltio types including when Entities/ Relationships are created, updated, deleted, Matched/Merged, Unmerged,
+     or the associated workflow status changed
+   - Messages do not count towards API Hit limit. This is howvever not FIFO
+   - Supported cloud message queue: AWS SQS, AWS SNS, GCP PubSub, Azure Service Bus
+   - Messages can be sent to multiple message queues and filtered based on data type(Entity, relationship, integraction), Event Type (CRUS, Merge/Unmerge), value of attribute
+   ** By default only data about the event and if the OV changed are sent in the message.
+   ** You can send payload that contains all populated attributes for affected records. This is not recommended as it creates very large messages that slow down message queue
+   
+   - Supported File Types: JSON (Recommended), JSON Zipped by GZIp and converted into base64 
+   - Limit: depends on message queue settings
+   - Best for Custom Integrations using cloud message queue, keeping all db/ downstream in sync with Reltio
 
 
 
