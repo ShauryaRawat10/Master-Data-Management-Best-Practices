@@ -1,0 +1,58 @@
+> Synchronous vs Asynchronous 
+  Synchronous:
+  - For this API call, data is processed at the time of the request. Any requested data is returned in the API call response.
+  - Synchronous process run in series and are generally used for small amounts of data or simple processing tasks
+
+  Asynchronous:
+  - Asynchronous API call add a processing task as a batch job to a processing queue. The API response returns information about the job.
+  - Batch jobs run in parallel with several processors working simultaneously. So, large jobs gets split up and processed efficiently.
+    You can monitor the status of the jobs using the APIs
+  - Asynchronous processes are generally used for large amounts of data or complex processing tasks.
+
+> Javasript Object Notation (JSON)
+  - Data and Metadata stored in Reltio tenants are stored as JSON Objects
+  - It includes Entities, Relationships, interactions. The definition of data models(types), cleansers, match rules, survivoship rules are stored as JSON
+
+> Application Program Interface (API)
+  - Reltio uses Application Program Interface (API) first software development strategy.
+  - Everything we need to do when interacting with Reltio tenant can be done using secure REST API. 
+  - Reltio UI also used API to fetch data. All integration methods use API either explicitly or in background
+
+> Loading data into Reltio with APIs
+
+  - Asynchronous Load API
+    It is the most efficient way to process data load. The way can be to bulk load data from files, which will start batch job.
+    - Upload files from S3, Google Cloud Storage, Azure Blob Storgae, SFTP
+    - Limits CSV (33 GB max remote, 50 MB max local), Excel (100,000 rows, 50 MB max local), JSON (50 MB max, 30-50 records at a time)
+    - Best for Bulk loads, historical data loads, batched updates, loading one type at a time, easy mapping
+
+   - Synchronous LOad API
+     Most flexible way to load data into Reltio. Best way to load data for continuous system integrations.
+     - This API is typically how the pre-built Reltio Connectors and Integration HUB (RIH) load data.
+     - It triggers immediate processing
+     - Data is loaded at run time. API response contains information about success and failure of the load.
+     - Two basic steps to load data:
+       > TRansform data into Reltio specific JSON 
+       > Use the appropriate API to load the data
+     - Post data using crossswalk id, entity id, relationship id, relationship start and end entity id
+     - Can post entities and relationships at the same time
+     - Best for Single record uploads, Small batch of updates, loading interactions, transformed data, continuous integration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
