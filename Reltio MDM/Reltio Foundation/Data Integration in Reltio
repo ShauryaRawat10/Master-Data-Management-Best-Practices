@@ -82,7 +82,63 @@
      - Share account and contact data between Reltio and Salesforce in both direction
      - Use Search before Create (SBC) feature to check for existing records in Reltio before creating new ones in Salesforce
      - Connector has intuitive step-by-step interface to map objects and fields between Salesforce and Reltio
-     - Use REST API to monitor and troubleshoot data exchange between two systems. 
+     - Use REST API to monitor and troubleshoot data exchange between two systems.
+  2. Inbound Integrations:
+     Reltio has 2 inbound integrations with Data as a Service (Daas) Providers that enrich your data
+     > dun and bradstreet
+       - Company that provides commercial data anlytics and business insights
+       - Its product and services help client to assess risk, identify growth opportunities and improve business performance
+       - D&B offers data on over 500 million businesses worldwide
+     > bureau van dijk
+       - It has a database on private companies worldwide and presents them in comparable standardized formats
+       - DB includes 450 million companies from all countries
+       - gathers data information from over 170 different providers to build database
+  3. Outbound Integrations:
+     Reltio has 2 outbound integrations that leverage the streaming service to mirror Reltio data in popular db system.
+     > Reltio Snowflake Connector
+       - Delivers clean, unified and validated data to snowflake
+       - Syncs snowflake tables and views with reltio data model
+       - Provides automated data event steaming with seamless reltio-managed onboarding
+       - Converts Reltio updates to snowflake tables and views in near real time using snowpipe
+     > Reltio Google Big Query
+       - GRQ connector provides accurate profile data to BigQuery platform
+     > Reltio Databricks Delta Lake Connector
+       - Delta Lake is an optimized storage layer for efficient data and table storage in Databricks lakehouse platform
+       - Extends parquet data files with transaction log for ACID transactions and scalable metadata handling
+       - Seamlessly integrates with Apache Spark APIs providing a powerful framework for data processing and analytics
+
+> Reltio Integration HUB:
+  RIH is a now code/ low code integration capability that connects different applications and systems to reltio
+  It leverages industry leading Workato integration platform
+  > With RIH you can build custom integrations and automate tasks including inbound, outbound and tenant/Data Management task using any Reltio API
+  > Includes powerful data transformation capabilities allowing to easily transform, manipulate and normalize data 
+  > Advance features like error handling and real time monitoring to ensure seamless and reliable integrations
+  > Recipes: Create recipe that tells RIH what to do when something happens in one app
+             Eg: when a new record comes in CRM application, automatically create entity in Reltio
+                 Bureau van dijk connector is actually a set of RIH recipes
+
+> Data Tenant Subscription Service (DTSS)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
