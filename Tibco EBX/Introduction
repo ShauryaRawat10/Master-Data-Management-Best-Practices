@@ -2,7 +2,7 @@
  1. TIBCO EBX is a new modelling leading customized MDM product that allows different applications to communicate efficiently
     with the users allowing unrestricted sharing of data and business processes among any connected applications and data sources
     in the organization.
- 2. Acquired French master data management solution provider Orchestra Networks in 2017
+ 2. Acquired French master data management solution provider Orchestra Networks in 2017. Earlier TIBCO has CIM as MDM tool
  3. Orchestra Networks is one of the major players in the data management space, offering a single solution called EBX for managing
     governing, and sharing master data, refrence data and metadata assets
 
@@ -12,6 +12,25 @@
  2. Designed for Entire Business - TIBCO EBX software is designed to be used by everyone, not just data experts and developers
  3. Flexible and Agile - While most custom applications and purpose-built MDM solutions are hard to change, TIBCO EBX software
     is flexible and agile
+
+TIBCO EBX Features:
+ 1. Hierarchy Management: TIBCO EBX is very useful to manage any type of hierarchy and can create hierarchy without duplications
+    which is very easy to visualize and maintain complex relationship
+ 2. Version Control: EBX can maintain different version of data which is very useful to track a particular record and making
+    certain decisions based on pattern of changing
+ 3. Platform Compatibility: EBX can be integrated with multiple platforms on-premise or in cloud. It can work with a wide range
+    of interfaces, application servers, databases, and infrastructures
+ 4. Insight with dashboard and KPI: EBX dashboard are very useful to track, analyze, and measure data quality and performance
+ 5. Data Services: EBX easily fits in Service Oriented Architecture with help of SOA and REST based data services. These services
+    are dynamically generated from data models and provide access to wide range of operations such as data update, queries or
+    version management
+
+ Summarized: Benefit of the product is consistency, customization, genericity, data control feature, Collaboration with other apps
+             (actors can work simultaneuously), tracebility (version control feature), access control, deployment process
+
+
+
+
 
 
 
