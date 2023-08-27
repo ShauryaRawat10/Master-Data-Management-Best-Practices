@@ -14,7 +14,9 @@ Reltio has 2 types of out-of-the-box Cleansers:
 > Cleansing as a service: Reltio provides APIs to send the JSON input and returns the cleansed JSON output. No data is 
   stored in Reltio when accessing these API services
 
-Address Cleanser:
+PROFILE LEVEL CLEANSER:
+
+1. Address Cleanser:
  > Uses the service called Loqate to validate street addresses, standardize the address format and enrich with additonal
    Geo data
  > Returns Verification Status, Zip5, Zip4, latitude, longitude, etc
@@ -31,7 +33,7 @@ Address Cleanser:
  2. Level of accuracy for deliverability and geolocation vary by country
  3. Additional country coverage requires additional Loqate or regional licenses
 
-Phone Number Cleanser:
+2. Phone Number Cleanser:
  > Validation Status: Formating check which includs checking if phno is connected and callable
  > Line Type: Premium_rate, toll_free
  > Extension: Can be encoded in many different ways. Phone Number cleanser can parse them all
@@ -39,15 +41,44 @@ Phone Number Cleanser:
                 country specific formats
  > Digit Count, Geo Area, Geo Country, etc
 
-Email Cleanser:
+3. Email Cleanser:
  > Domain: gmail.com, reltio.com
  > Domain Type: PRIVATE, PUBLIC
  > Username: string before domain
  > Validation Status: Valid, invalid
 
+4. Full Name Cleanser:
+ > Combines various name attributes in an entity to populate a full name attribute
+ > Full Name can be 
+   Given Name + Family Name
+   Family Name + Given Name
+   Family Name + Middle Name + Given Name
+   Given Name + Fathers Given Name
+   Given Name + Patronymic Name (Fathers Name) + Family Name
+   Given Name + Mothers Family Name + Fathers Family Name
+ > So, Full Name Cleanser uses a pattern defined to build a new Name
+
+Additional Cleansers:
+ 5. String Cleanser:
+   > For Casing(Upper, Lower, title), trimming(leading/trailing spaces), padding, scrubbing(removing character set)
+   > "casing" : "Upper"
+     "scrub" : "!@#$&()<>^/"
+
+ 6. Pattern Based Cleanser
+    > Generic version of Full Name Cleanser to concatenate attribute values
+    > "pattern" : "I, {FirstName}{LastName}, live in {Country}"
+
+ 7. Initials Cleanser:
+    > Generates an acronym by taking the first letter of each word in input string value in caps
+    > "Walter James Bruce" will return "WJB"
+
+ 8. S3 File Cleanser:
+    > String replacement function on words and regular expressions
+    > We provide Reltio list of strings or regular expressions (RegEx) to load into S3 and clean them.
+    > It Globally replaces certain text or implement any regex text transformation
 
 
-
+Match Level Cleanser:
 
 
 
