@@ -80,6 +80,16 @@ Additional Cleansers:
 
 Match Level Cleanser:
 
+Reltio has 3 out-of-the-box data transformation functions that operate only during execution of match rule.
+
+ 1. Name Dictionary Cleanser: 
+    > Activates and Controls synonym matching
+    > Example: William, Will, Willy, Willie, Bill, Billy
+ 2. String Replacement Cleanser: 
+    > Replacing raw data with String of your choice
+ 3. Noise Words: 
+    > Can eliminate unwanted noise words from an attribute during matching
+    > Examples: Reltio, Reltio Incorporated, Reltio Limited, Reltio Inc, Reltio Corp
 
 
 
