@@ -13,6 +13,7 @@ Reltio has 2 types of out-of-the-box Cleansers:
   crosswalk source
 > Cleansing as a service: Reltio provides APIs to send the JSON input and returns the cleansed JSON output. No data is 
   stored in Reltio when accessing these API services
+> Address, Phone and Email Cleanser comes preconfigured in velocity packs
 
 PROFILE LEVEL CLEANSER:
 
