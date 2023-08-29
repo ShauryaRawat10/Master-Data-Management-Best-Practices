@@ -90,7 +90,13 @@ Productivity Services Integrated with Reltio Workflow:
  3. Notifications : Notifies you regarding workflow tasks. Notifications can be accessed in Dashboard, Inbox, email
 
 
-
+Custom Workflows:
+ > For custom and specific business needs reltio platform supports defining new business processes and provides necessary tools
+   and APIs for seamless workflow experience
+ > Allows you to define business processes using a web based modeler
+ > Supports customization of user and service tasks
+ > Provides framework for creating custom logic in java and importing it
+ > Supports local debugging of custom code in UI and debugger
 
 
 
