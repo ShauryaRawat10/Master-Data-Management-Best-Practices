@@ -1,0 +1,16 @@
+Export File Format:
+1. CSV Flattened: 
+   > Each profile is in one row
+   > If we choose to export "all attribute values", it can add hundereds of columns
+   > If we choose "OV only values", it can still have many columns for multiple ovs from aggregation
+
+2. CSV Exploded:
+   > Each attribute is in one column, profile with multiple values organized in mutiple rows 
+   > If we choose to export "all attribute values", it can add thousands of rows
+   > If we choose "OV only values", it can still have many rows for multiple ovs from aggregation
+
+3. JSON:
+   > JSON file format uses the native Reltio graph data model structure
+
+* Exported file is in .gz format
+* Advanced UI can be used to filter the export 
