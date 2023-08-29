@@ -20,6 +20,7 @@ Data Tenant:
  > DT can be subscribed to by one or more Customer Tenants
  > Customer tenant can also subscribe to one or more DT
  > Custom Data Tenants can be created for Reltio Customers and Partners
+ > CT can also be used as DT
  
 DTSS Event Queue:
  > When any change occurs in DT, an event is published on internal queue with ID of the record that created the event and 
