@@ -1,0 +1,98 @@
+Overview
+ > In Reltio platform, the workflows feature allows you to manage business processes through a series of predetermined steps
+   or tasks based on predefined rules or conditions
+ > Reltio has predefined out-of-the-box workflows to handle typical business use case and automate the implementation process
+
+Why workflows?
+ > Data Governance is often described as People, process, and technology coming together to improve the quality of enterprice data
+ > Some key challenges that business face when enriching and managing data can be broadly classified into:
+   1. Non-Standardized business process
+   2. Miscommunication
+   3. Lack of accountability
+   4. Difficult tracking
+ > Business need a way to reduce the noise and provide users only the relevant information that they need for decision making
+   This information can be either system generated or provided by collaborators
+ > Businesses look for mechanism to assign tasks to the most appropriate person available at a given time to help increase
+   the overall throughput and minimize error and cost
+ > A robust tracking mechanism helps businesses implement the business process and drive overall accountability
+
+ > Actors in Reltio Workflow:
+   A typical workflow used to implement a repeatable business process with clearly defined accountability. Users with different
+   role interact with workflows and tasks in a different ways.
+   1. Business Users : Initiate workflow
+   2. Data Stewards : Resolve workflow tasks
+   3. System Administrators : Manage users, roles, and tasks
+   4. Business Analysts, developers : Modify Out-of-the-box workflows or develop custom workflows
+
+ > Only users with role ROLE_WORKFLOW can initiate a workflow
+
+What are workflows?
+ > Workflow represent an orchestrated and repeatable pattern of activity. A workflow consists of a sequence of tasks that
+   achieve a specific business goal
+ > Example: Workflow to verify a personal details and lists the various tasks involved in personal details verification
+            process flow
+            Import Contacts > Verify Addresses > Verify Email > Verify Phone > Accept record
+
+What are Reltio Workflow?
+ Reltio workflow allows you to manage complex business processes through a series of predetermined steps and tasks.
+ > Reltio Preconfigured Workflow
+   1. Potential Match Review
+   2. Recommend Delete
+   3. Data Change Request
+
+ > Reltio Custom Workflow
+   1. Reltio provides tools and libraries to customize workflows and deploy it in Reltio
+   2. Reltio provides productivity services that are integrated with Reltio workflows
+   3. Reltio provides roles and security for task initiators, assignees, and reviewers for better accountability and process adherence
+     
+Workflow Tasks:
+ > An individual step in workflow is called a task
+ > Workflow tasks can be broadly classified into 2 major categories:
+   1. User tasks : 
+      > Tasks that can be manually carried out by user
+      > Perfomed by Users such as review and approval
+   2. System tasks : 
+      > Tasks that are triggered and performed by the system when specific conditions are met
+      > Performed by system such as listening to events, triggering appropriate actions, validating user input and context,
+        notifying users based on predefined configuration
+ > In Reltio you can:
+   1. Create tasks 
+   2. Claim and complete a task
+   3. Control and update the assignee for a task
+   4. Collaborate with other users by commenting on a task
+
+Potential Match Review Workflow:
+
+ Start  >   Match Review  >  Decision Gateway   --Merge-->    Merge Service     >    End 
+                                    |                                                  |
+                                    |------Not-a-Match--->  Not a Match Service -------|
+
+ Match Review: It is a user task and requires user intervention
+ Merge and Not a Match Services: System tasks that are triggered and automatically managed by system based on user action
+ Reltio workflow is not enabled by default. Customers need to request workflow to be enabled.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
