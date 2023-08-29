@@ -99,6 +99,50 @@ Custom Workflows:
  > Supports local debugging of custom code in UI and debugger
 
 
+User Roles:
+ > ROLE_API : 
+   - Required to interact with Reltio Platform 
+ > ROLE_USER :
+   - Required to interact with Reltio Platform from HUB UI and other UI based applications
+ > ROLE_WORKFLOW :
+   - Required to initiate a workflow
+   - Required to view, reassign and act on workflow tasks via Reltio Inbox
+   - Required to view task notification in Dashboard UI
+   - Required to publish workflows to a Reltio Tenant
+ > ROLE_REVIEWER:
+   - Required to be assigned, view and act on workflow tasks
+   - Does not have any previledges assigned by default and is designed to be used as filter for users who can be assigned
+     workflow tasks
+
+Workflow task Validation:
+ > Reltio workflow task validator automatically marks a workflow task as invalid if changes resulting from other processes
+   impact the smooth functioning of task
+
+Notifications:
+ > User supporting the workflow receive email notifications whenever workflow task is assigned to them
+ > Notification emails can be assessed in Reltio user interface using Dashboard or using Reltio Inbox
+ > When a task is completed, user who initiated the task also recieves notification:
+   1. The completion status of task
+   2. The name of assignee
+   3. Any comments added by reviewer
+ > Notifications are disabled for Potential Match Review (PMR) workflow by default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
