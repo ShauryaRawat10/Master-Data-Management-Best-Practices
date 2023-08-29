@@ -1,0 +1,19 @@
+Data Tenant Subscription Service (DTSS)
+ > Sharing of data from a single "Data Tenant" with multiple "Customer Tenants"
+ > Seamless sharing of data between any number of Reltio tenants, without any external ETL or integartion effort
+ > Access to 3rd party data provider content (such as NPI, DEA, etc) from selected best of breed data partners (either
+   via a prebuilt and integrated connector or full load of reference data from external provider)
+
+DTSS consist of:
+ > Data Tenant : Source of data to be shared
+ > One or more Customer Tenant : CT are recipients of data from data tenant
+ > Event Queue : When data is created, updated and deleted in DT, an event is published onto queue with the ID and event
+   type of the record that triggered event in DT
+ > DTSS Application Service : Monitors the event queue and processes the events as they are received according to business
+   rules configured in DTSS subscription
+ > DTSS Subscription : Specifies how data in the Data Tenant will be used to match and update the data in a Customer Tenant.
+   Each Customer tenant has its own subscription
+
+
+
+
