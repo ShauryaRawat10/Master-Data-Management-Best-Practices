@@ -14,6 +14,22 @@ DTSS consist of:
  > DTSS Subscription : Specifies how data in the Data Tenant will be used to match and update the data in a Customer Tenant.
    Each Customer tenant has its own subscription
 
+Data Tenant:
+ > DT contains 3rd party data that can be used to enhance a customer's own data
+ > DT are maintained by Reltio, access to them can be licensed from Reltio or 3rd party data provider
+ > DT can be subscribed to by one or more Customer Tenants
+ > Customer tenant can also subscribe to one or more DT
+ > Custom Data Tenants can be created for Reltio Customers and Partners
+ 
+DTSS Event Queue:
+ > When any change occurs in DT, an event is published on internal queue with ID of the record that created the event and 
+   the event type
+ > This queue is monitored by DTSS application service which evaluates each event and takes action in accordance with business
+   rules defined in application service.
+
+
+
+
 
 
 
