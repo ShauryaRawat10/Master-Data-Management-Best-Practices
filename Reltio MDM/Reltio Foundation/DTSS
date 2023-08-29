@@ -27,6 +27,29 @@ DTSS Event Queue:
  > This queue is monitored by DTSS application service which evaluates each event and takes action in accordance with business
    rules defined in application service.
 
+DTSS Application Service:
+ > The event queue is monitored by DTSS application service which evaluates each event and takes action in acccordance
+   with the business rules defined in application service
+ > When a customer licenses a DTSS service, Reltio will create an initial subscription between DT and CT depending on
+   which DTSS service has been licensed. A variety of operations, monitoring and administrative functions are available
+   to customers via the application service API.
+
+DTSS Subscription:
+ Set of configurable rules that enable you to specify how data can be moved from DT to CT in JSON config
+ > "mappings" : specifies how attributes in DT should be mapped to corresponding attributes in CT
+ > "eventsConfiguration" : specifies which event types should be processed and which entityType and sources for each should 
+                           be processed.
+ > "synchronizationConfiguration" : specifies how sync between DT and CT should be done. Options include real time and batch.
+                           match rule to use to identify matched between CT and DT
+ > "importRelationsConfig" : specifies how changes to relations in DT should be handled
+
+
+
+
+
+
+
+
 
 
 
