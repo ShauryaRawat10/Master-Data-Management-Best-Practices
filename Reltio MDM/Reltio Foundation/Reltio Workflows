@@ -72,6 +72,38 @@ Potential Match Review Workflow:
  Reltio workflow is not enabled by default. Customers need to request workflow to be enabled.
 
 
+Reltio Workflow and Business Process Management:
+ > Reltio uses Activiti workflow engine - a business process execution language (BPEL) compliant workflow engine
+ > Reltio has workflow modeler which is part of console and activity plugin for eclipse to create and modify custom workflows
+ > Workflow modeler supports workflows 2.0 open standard and user interface is typically sufficient to create business processes
+   for most cases
+ > All workflow can be accessed and managed using the API
+
+Tools and Libraries to customize workflows:
+ > Workflow modeler : Web based business process designer that supports business process model and Notation 2.0 open standard
+ > Java : JAVA libraries can be used to customize various aspects of workflow
+ > Activiti : Java centric open-source workflow engine that supports real-world process automation
+
+Productivity Services Integrated with Reltio Workflow:
+ 1. Inbox : Helps you manage and work on all workflow tasks
+ 2. Dashboard : Helps you view task notification
+ 3. Notifications : Notifies you regarding workflow tasks. Notifications can be accessed in Dashboard, Inbox, email
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
