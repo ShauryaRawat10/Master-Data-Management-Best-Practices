@@ -1,0 +1,7 @@
+DVF (Data Validation Function):
+ > DVF is the ability to question the accuracy and quality of data that gets injected into Reltio
+
+DVF from UI:
+ > Function Builder Editor : 
+ > SSN Exists
+   SSN Equals RegularExpression
