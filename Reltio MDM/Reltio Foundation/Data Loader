@@ -23,6 +23,52 @@ Loading via Cloud (AWS, GCP, Azure):
  > If there are multiple files, give the folder path
  > If there are files with similar prefix pattern, specify the mask = "level_1/level_2/A_"
 
+Best Practices:
+ > Maximum number of values held within an entity = 200
+ > Maximum number of entities refernced from an entity = 20
+ > Maximum number of values retrieved through set of refrence attributes held within an entity = 100
+
+ > Following approach is recommended when you load data using real-time REST API:
+   - Implement a configurable multithreaded application. Reltio platform is built on clustered componens, so it is preferable
+     to process loads in a parallel approach. The number of objects per post and number of threads needs to be tunable
+     depending on the dataset used and infrastructure available
+   - For application that run as a service or perpetually, implement appropriate buffer flushing and shutdown hooks to allow
+     the application to gracefully exit when terminated by a user or during an unexpected exit.
+   Reltio Data loader API will automatically take care of these considerations
+ > Choose between 20 to 50 objects per post to reduce API overhead
+   Exceeding 50 objects per post may introduce timeout errors (504). In this case, reduce the number of objects per post
+ > Choose a thread count between 20 and 50 and be prepared to experiment. 
+   Sometimes if you are exceeding the capability of the tenant, lowering the number of threads will increase throughput (OPS)
+
+ > Loading large DataSets:
+   - Disable the match rules by setting the scope parameter to "NONE". 
+
+ > Monitoring the load process:
+   - If you develop your own process using Reltio API to load data, you need to monitor the tenant queue status
+     1. Green : Tenant Queues are empty
+     2. Yellow : This is normal status during processing
+     3. Red : Tenant Queues are not being processed as expected
+   - Add a logic to your load process to pause if the queue status turns to red, only resumes once it returns to green.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
