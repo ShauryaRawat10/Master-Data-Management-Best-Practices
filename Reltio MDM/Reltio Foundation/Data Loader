@@ -1,0 +1,10 @@
+Reltio Console Data Loader
+ > Enables bulk data to be loaded into the tenant
+ > Loading od Entities, Relationships including simple/nested/reference attributes
+ > Handles batching and multithreading
+ > Handles files upto 33 GB for CSV and 100K rows for excel
+ > Source files on local workstation, AWS, GCP, Azure, SFTP
+ > Supports scheduling
+ > Optimizes the data load process and automates queue management
+ > Minimizes consumption of tenant quotas
+ > Provides metrics about the job
