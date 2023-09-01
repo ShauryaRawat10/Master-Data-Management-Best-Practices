@@ -8,3 +8,9 @@ Reltio Console Data Loader
  > Optimizes the data load process and automates queue management
  > Minimizes consumption of tenant quotas
  > Provides metrics about the job
+
+Specifying the job actions:
+ > Specify the name of the job
+ > Specify if the job should do full or partial update
+ > Specify whether LCA should be executed
+
