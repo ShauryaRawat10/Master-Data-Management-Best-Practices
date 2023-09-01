@@ -49,6 +49,7 @@ Best Practices:
      2. Yellow : This is normal status during processing
      3. Red : Tenant Queues are not being processed as expected
    - Add a logic to your load process to pause if the queue status turns to red, only resumes once it returns to green.
+   - API : https://{env}.reltio.com/reltio/status/tenant/{mdmTenant}?details=all
 
 
 
