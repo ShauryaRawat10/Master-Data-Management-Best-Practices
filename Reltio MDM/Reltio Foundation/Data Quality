@@ -1,0 +1,23 @@
+Reltio Data Quality Dashboard:
+ > Information gets processed in real time to make charts
+
+Detailing:
+ 1. Select the Entity to see:
+    - Active profiles
+    - Inactive profiles
+    - Attributes
+    - Source Systems
+ 2. Consolidation rate of source systems
+    - stacked bar showing all source systems
+    - stack bar showing total profiles after match/merge
+ 3. Attributes Pane:
+    - Shows bars per attribute for total values population (Fill Rate)
+    - If attribute is included in match rule, has validation functions, reference attributes, rdm, etc
+    - Uniqueness analysis : total number of entites with unique values
+    - Source System Wise analysis
+    - Length Statistics : Minimum, Maximum, Average, Median
+
+
+
+
+
