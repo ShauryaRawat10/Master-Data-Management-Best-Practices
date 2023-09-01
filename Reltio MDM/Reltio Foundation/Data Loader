@@ -9,8 +9,20 @@ Reltio Console Data Loader
  > Minimizes consumption of tenant quotas
  > Provides metrics about the job
 
+Mapping Reference Attributes:
+ > You can specify the data provider and contributor provider properties for refEntity and refRelation crosswalks by
+   selecting "Advanced Settings" dropdown
+
 Specifying the job actions:
  > Specify the name of the job
  > Specify if the job should do full or partial update
  > Specify whether LCA should be executed
+
+Loading via Cloud (AWS, GCP, Azure):
+ > If there is one file, specify the AWS Key, secret, region, bucket name, File path
+ > If there are multiple files, give the folder path
+ > If there are files with similar prefix pattern, specify the mask = "level_1/level_2/A_"
+
+
+
 
