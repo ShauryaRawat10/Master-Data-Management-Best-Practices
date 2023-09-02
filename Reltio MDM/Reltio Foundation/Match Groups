@@ -34,6 +34,61 @@ Rule Types:
    (iv) Publich an event Potential Link (that candidate pairs for matching can have relationship instead)
 
 
+Comparison Formula:
+ > Made up of Comparison Operator and Helper Operator that finally evaluates to True or False
+   1. Comparison Operator (5): Exact, ExactOrNull, ExactOrAllNull, Fuzzy, NotExactSame
+   2. Helper Operator (7): AND, OR, NOT, Equals, NotEquals, In, NullValues
+ > Comparison Operator needs Comparison class to perform matching
+
+Out-of-the-box Comparison Classes (16+):
+ > AddressLineComparator
+ > BasicStringComparator                           => Best for Exact Comparison
+ > BasicTokanizedOrganizationNameComparator
+ > DamerauLevenshteinDistanceComparator
+ > DistinctWordsComparator
+ > DynamicDamerauLevenshteinDistanceComparator
+ > DoubleMetaphoneComparator
+ > MetaphoneComparator
+ > OrganizationNamesComparator
+ > PhoneNumberComparator
+ > RangeNumericComparator
+ > SondexComparator
+ > StringCharactersComparator
+ > StringComparatorsIgnoringNulls
+ > ProximateGeoComparator
+ > CrossMultiComparator
+ > ExactOrNullCrossMultiComparator
+ > <Custom Comparator>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
