@@ -19,4 +19,24 @@ Classic JSON Structure:
         > equals
         > fuzzy
 
+ scope property in match rule : Internal, External, All (Defines where match rule is applicable)
+ useOvOnly in match rule : Whether or not, only golden surviving value is considered for matching
+
+Rule Types:
+ 1. Automatic (boolean)
+ 2. Suspect (boolean)
+ 3. <your rule name> (boolean)
+ 4. relevence_based (arithmetic)
+ > Rules issue directives to match engine 
+   (i) Merge
+   (ii) Queue for review
+   (iii) Publish an event of Auto Link (that candidate pairs for matching can have relationship instead)
+   (iv) Publich an event Potential Link (that candidate pairs for matching can have relationship instead)
+
+
+
+
+
+
+
 
