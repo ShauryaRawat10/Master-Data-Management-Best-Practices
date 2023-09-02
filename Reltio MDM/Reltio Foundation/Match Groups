@@ -8,3 +8,15 @@ Anatomy of Match Group:
    - Tokanization Classes
  > Generally a match rule whose comparison formula evaluates to true for a given pair of records, will produce a directive of "merge" or "queue for review" 
 
+Classic JSON Structure:
+ rule
+   > ignoreInToken
+   > cleanse
+   > matchTokenClasses
+   > ComparatorClasses
+   > and     }  Comparison Formula          
+        > exact          
+        > equals
+        > fuzzy
+
+
