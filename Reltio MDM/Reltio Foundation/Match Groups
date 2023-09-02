@@ -60,6 +60,25 @@ Out-of-the-box Comparison Classes (16+):
  > ExactOrNullCrossMultiComparator
  > <Custom Comparator>
 
+Why Tokenization?
+ > Tokenization is used to match candidates that will be presented to the match groups for actual comparison purposes
+ > Tokenization avoids the need to compare every possible pair of records (out of millions of records) by identifying "match candidate pairs" in your tenant that are close enough
+   that they should be formally evaluated by the match groups.
+ > Match Token Class are designed to mimic the same strategies as Comparator Clases. So, for SoundexComparator we need SoundexTextMatchToken Class
+ > Tokenizing an attribute can however be needs proper evaluation as some attributes may generate too many tokens due to threashold and degrade the performance
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
