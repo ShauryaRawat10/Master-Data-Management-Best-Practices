@@ -1,0 +1,20 @@
+Match Level Cleansers:
+ > Are completely different set of cleansers from profile level cleansers
+ > Are dedicated to and invoked exclusively by match engine
+ > Do not insert a crosswalk and do not modify the data in the entity
+ > Fetch the data from attributes and transform the data in-memory only for matching purpose
+ > Operate before Tokenization and before comparison process
+ > Provides 3 basic cleansing operation:
+   - Synonym Matching (Name Dictionary Cleanser)
+   - String Replacement
+   - Noise Words Removal
+
+Name Dictionary Cleanser:
+ > Mostly used to explicitly match synonym first name where the structure and pronunciation are so distinct that phonetic and other fuzzy approaches may not match them
+ > Eg: Alexandria and Alix
+ > Name Dictionary is based on simple excel file
+ > Each row declares a base name and its synonyms (Alexandria, Alix, Lexi, Ali)
+ > Match Engine treats all rows declared in the excel row as semantically equal
+ > Instantiated as Cleanse Adapter within the match configuration
+
+
