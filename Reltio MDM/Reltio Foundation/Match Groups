@@ -1,0 +1,10 @@
+Anatomy of Match Group:
+ > Match Group section can have many match group as you need. Each Match Group has one Match Rule
+ > An Entity will have 3 to 7 Match Groups on average
+ > The Rule represent a range of tactics for comparing candidate pairs
+ > Match Group consist of three key parts:
+   - Comparison Formula
+   - Comparator Classes
+   - Tokanization Classes
+ > Generally a match rule whose comparison formula evaluates to true for a given pair of records, will produce a directive of "merge" or "queue for review" 
+
