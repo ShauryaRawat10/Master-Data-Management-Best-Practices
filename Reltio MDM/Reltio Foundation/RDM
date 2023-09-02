@@ -1,0 +1,98 @@
+Reference Data Management using RDM:
+ > Adding the lookup to your L3:
+   {
+     "hidden" : "false",
+     "uri" : "configuration/entityTypes/contact/attributes/status",
+     "lookupCode" : "rdm/lookupTypes/Status"
+   }
+ > Specifying the Source in L3 and RDM Configuration
+ > 
+
+Creating Hierarchical LookupTypes:
+ > Lookups can be organized into hierarchy where values in one attribute depends on values in second attribute
+ > State depends on the selection of country
+ > Add dependentLookupAttributes in country attribute of L3
+
+Localizing Canonical Values:
+ > Canonical Value is displayed in selected language
+ > Canonical value in the respective language is provided by customer only
+ > Attributes and UI is localized automatically once browser's default language is updated
+
+Creating and Using Custom attributes:
+ > A LookupType can have custom attribute associated with it. 
+ > Country could have custom attribute as Population and Currency to provide extra information about selected country
+   Custom attributes are only available via RDM API, they can not be displayed in UI
+   However, Get entity will return the json with Custom attributes also
+   {
+     "type" : "configuration/entityTypes/contact/attributes/Country",
+     "ov" : true,
+     "value" : "Unites States",
+     "lookupCode" : "US"
+     "lookupRawValue" : "Unites States",
+     "lookupAttributes" : [
+        "name" : "population",
+        "value" : "768000000"
+      ],
+      "uri" : "configuration/entityTypes/contact/attributes/Country/1rjdjbd",
+   }
+
+
+Activity Log:
+ > Captures details of changes made to each of the following RDM Component
+   - Lookup Types
+   - Sources
+   - Lookup Value
+ > Activity Log contains detail of the following event:
+   - Created, updated, deleted lookup Types, sources and lookups
+   - Created, updated, deleted custom attributes
+
+
+Generators:
+ > RDM generator can be used to automatically generate lookup values code
+ > If you have large number of values to load for a lookup using the API and do not have simple way to 
+   create unique canonical codes
+ > Codes will be displayed in the UI dropdown because they will be differnt from Canonical Values
+ > 2 steps to enable this feature:
+   - Define the generator (UUID - Universal unique id, Sequential - incremented by one)
+   - Specify that generator should be used for canonical codes
+ > Select Auto Generate Canonical Code in Lookup Types specified earlier
+
+Managing Unmapped Values:
+ > If an attribute has lookup and new value is created which is not in existing lookup list, it will be flagged as Unmapped value
+ > We need to map such values to existing or new canonical code
+ > To enable unmapped values tracking in all MDM tenant subscibed to RDM tenant, use trackTranscodeErrors to True in RDM Configuration
+ > To enable unmapped values tracking only one MDM tenant subscibed to RDM tenant, use publishMDMErrors to True in Physical Configuration
+
+Exporting Lookup Details:
+ > Lookup Details can be exported to csv or json file using RDM UI
+ > Following can be exported:
+   - Lookup Types
+   - Sources and Values
+   - Custom Attributes
+   - Translations
+   - Hierarchies
+   - Audit Data
+ > Email will be sent to user id with link to exported data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
