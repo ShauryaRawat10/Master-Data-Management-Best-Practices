@@ -35,6 +35,8 @@ OtherAttributeWinnerCrosswalk:
  > Eg: AddressLine2 can be dependent on surviving crosswalk from AddressLine1
 
 SourcesforOV:
+ > List of Sources that must be used for OV calculation
+ > All other source are ignored for OV calculation
 
 Filtering within a strategy:
  > Using filter in survivorship startegy, we can apply different survivorship strategies for the same attribute
