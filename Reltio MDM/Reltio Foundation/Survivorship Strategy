@@ -30,9 +30,14 @@ Oldest Value:
  > Finds a crosswalk with oldest Create Date
  > All values within that attribute that were provided by this crosswalk are selected as ov
 
+OtherAttributeWinnerCrosswalk:
+ > Survivorship is selected based on Crosswalk of Master attribute defined 
+ > Eg: AddressLine2 can be dependent on surviving crosswalk from AddressLine1
+
 SourcesforOV:
 
-
+Filtering within a strategy:
+ > Using filter in survivorship startegy, we can apply different survivorship strategies for the same attribute
 
 
 
