@@ -1,0 +1,22 @@
+Key Reltio Diffrentiator:
+ > Reltio has attributes modelled as array and can hold multiple values
+ > Simple attributes, Nested attributes, reference attributes are all arrays
+ > Reltio has no golden record, the OVs from survivoship is calculated On-the-fly
+
+Force OV through UI:
+ > In Sources view, PIN, IGNORE options can be used to force more than one value to survive or ignore irrespective of survivoship strategy 
+
+Survivoship Groups:
+ > Different Survivoships can be created for different users
+ > In UI, RuleSet is used to select the role and calculate survivoship for that role. However in prod, it must be hidded and role will be selected automatically based on user
+
+Survivorship Startegies (8):
+> LUD (Last Update Date, Recency)
+> SRC_SYS (Source System)
+> Frequency
+> Aggregation
+> Oldest Value
+> Min Value
+> Max Value
+> OtherAttributeWinnerCrosswalk
+
